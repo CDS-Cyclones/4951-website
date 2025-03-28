@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team 4951</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+        #clock {
+            font-size: 2em;
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.5em;
+            color: #555;
+        }
+        footer {
+            margin-top: 20px;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .logo-container a {
+            text-decoration: none;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<h1>Team 4951</h1>
+<div id="clock"></div>
+<p>Too busy working on a robot to make a website...</p>
+
+<footer>
+    <div class="logo-container">
+        <a href="https://www.thebluealliance.com/team/4951" target="_blank">
+            <img src="assets/tba.png" alt="Blue Alliance" class="logo">
+        </a>
+        <a href="https://github.com/cds-cyclones" target="_blank">
+            <img src="assets/gh.png" alt="GitHub" class="logo">
+        </a>
+    </div>
+</footer>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+        const time = now.toLocaleTimeString();
+        document.getElementById('clock').innerText = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+</script>
+</body>
+</html>
