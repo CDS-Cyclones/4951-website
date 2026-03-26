@@ -3,70 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team 4951</title>
+    <title>FRC Team 4951 | CDS Cyclones</title>
+    <meta
+        name="description"
+        content="FRC Team 4951 is a student-led robotics team from King City, Ontario, affiliated with The Country Day School."
+    >
     <link rel="icon" href="assets/logo.png" type="image/png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #333;
-        }
-        #clock {
-            font-size: 2em;
-            color: #007BFF;
-        }
-        p {
-            font-size: 1.5em;
-            color: #555;
-        }
-        footer {
-            margin-top: 20px;
-        }
-        .logo-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .logo-container a {
-            text-decoration: none;
-        }
-        .logo {
-            width: 80px;
-            height: auto;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>FRC Team 4951</h1>
-<div id="clock"></div>
-<p>REBUILT 2026</p>
-<p>Windsor Essex & Georgian College</p>
-<footer>
-    <div class="logo-container">
-        <a href="https://www.thebluealliance.com/team/4951" target="_blank">
-            <img src="assets/tba.png" alt="Blue Alliance" class="logo">
-        </a>
-        <a href="https://github.com/cds-cyclones" target="_blank">
-            <img src="assets/gh.png" alt="GitHub" class="logo">
-        </a>
-    </div>
-</footer>
+    <div class="page-shell">
+        <header class="hero">
+            <nav class="topbar">
+                <div class="brand">
+                    <img src="assets/logo.png" alt="Team 4951 logo" class="brand-mark">
+                    <span>FRC Team 4951</span>
+                </div>
+                <div class="topbar-links">
+                    <a href="#about">About</a>
+                    <a href="#highlight">Highlight</a>
+                    <a href="#connect">Connect</a>
+                </div>
+            </nav>
 
-<script>
-    function updateClock() {
-        const now = new Date();
-        const time = now.toLocaleTimeString();
-        document.getElementById('clock').innerText = time;
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-</script>
+            <div class="hero-grid">
+                <section class="hero-copy">
+                    <p class="eyebrow">Student-built. Mentor-backed when needed.</p>
+                    <h1>CDS Cyclones</h1>
+                    <p class="hero-text">
+                        We are Team 4951, a fully student-led FRC team affiliated with The Country Day
+                        School. Since 2014, we have been building robots, building connections, and
+                        proving that a good pit crew runs on skill, dedication, and at least a couple
+                        of stolen safety glasses.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#team">Meet the Team</a>
+                        <a
+                            class="button button-secondary"
+                            href="https://www.youtube.com/watch?v=_VrQx5zQtKg"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Watch Provincials 2025
+                        </a>
+                    </div>
+                </section>
+
+                <aside class="hero-card">
+                    <p class="card-label">2026 Events</p>
+                    <p class="event-intro">
+                        Catch us competing at our Ontario district events, with Provincials in the
+                        mix if all goes to plan.
+                    </p>
+                    <ul class="stat-list">
+                        <li>
+                            <strong>Georgian College</strong>
+                            <span>District Event</span>
+                        </li>
+                        <li>
+                            <strong>Windsor Essex Great Lakes</strong>
+                            <span>District Event</span>
+                        </li>
+                        <li>
+                            <strong>Provincial Championships</strong>
+                            <span>Hopefully :P</span>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" class="panel panel-about">
+                <div class="section-heading">
+                    <p class="eyebrow">About Us</p>
+                    <h2>We build the robot, run the team, and ask for mentor help when it actually matters.</h2>
+                </div>
+                <div class="about-grid">
+                    <p>
+                        Team 4951 is a welcoming, student-led robotics team from King City, Ontario.
+                        Affiliated with The Country Day School, we have been competing since 2014 and
+                        take pride in doing the real work ourselves, from design reviews to driver
+                        practice to the inevitable last-minute fix that suddenly becomes "part of the plan."
+                    </p>
+                    <p>
+                        Our mentors support us when needed, but the direction, energy, and personality
+                        of the team come from students. That means every season is equal parts technical
+                        challenge, collaboration, and controlled chaos, which is a pretty accurate
+                        description of FRC in general.
+                    </p>
+                </div>
+            </section>
+
+            <section id="team" class="panel panel-team">
+                <div class="section-heading">
+                    <p class="eyebrow">Meet the Team</p>
+                    <h2>The people keeping 4951 organized, operational, and mostly sane.</h2>
+                </div>
+                <div class="team-grid">
+                    <article class="team-member">
+                        <h3>Mr. Wappel</h3>
+                        <p>Lead Mentor, makes sure we are at least somewhat on task with realistic ideas.</p>
+                    </article>
+                    <article class="team-member">
+                        <h3>Mr. Simmonds</h3>
+                        <p>Lead Mentor, makes sure we all know when to take breaks and stay hydrated at competitions.</p>
+                    </article>
+                    <article class="team-member">
+                        <h3>Marcus Kongjika</h3>
+                        <p>Lead Software Developer, Driver, and Team Coordinator.</p>
+                    </article>
+                    <article class="team-member">
+                        <h3>Preston Baichoo</h3>
+                        <p>Lead Mechanical Engineer, Pit Coach, and Team Coordinator.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="highlight" class="panel panel-highlight">
+                <div class="section-heading">
+                    <p class="eyebrow">2025 Highlight</p>
+                    <h2>2025 Documentary.</h2>
+                </div>
+                <div class="highlight-card">
+                    <div>
+                        <p class="highlight-title">FRC Provincials 2025</p>
+                        <p class="highlight-text">
+                            Watch our provincials documentary and get a feel for the speed,
+                            pressure, and broken elevators that make weekends like this memorable.
+                        </p>
+                    </div>
+                    <a
+                        class="button button-primary"
+                        href="https://www.youtube.com/watch?v=_VrQx5zQtKg"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Open Video
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer id="connect" class="footer">
+            <p class="footer-title">Find us where robots get judged and code gets pushed.</p>
+            <div class="logo-container">
+                <a href="https://www.thebluealliance.com/team/4951" target="_blank" rel="noreferrer">
+                    <img src="assets/tba.png" alt="The Blue Alliance" class="logo">
+                </a>
+                <a href="https://github.com/cds-cyclones" target="_blank" rel="noreferrer">
+                    <img src="assets/gh.png" alt="GitHub" class="logo">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
